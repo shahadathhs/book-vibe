@@ -16,7 +16,6 @@ const ListedBooks = () => {
             </ul>
           </details>
         </div>
-        {/* Tab Data */}
         <TabData></TabData>
       </div>
     </div>

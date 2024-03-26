@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveRead } from "../../utility/locatStorage";
 
 const BookDetails = () => {
 
@@ -9,6 +10,11 @@ const BookDetails = () => {
   const idInt = parseInt(bookId);
   const book = books.find(book => book.bookId === idInt);
   // console.log(book);
+
+  const handleReadList = book => {
+    console.log("Book added");
+    saveRead(book);
+  }
 
   return (
     <div>
@@ -51,7 +57,7 @@ const BookDetails = () => {
               </table>
             </div>
             <div className="flex gap-3">
-              <button className="btn bg-white border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white hover:border-0">Read</button>
+              <button onClick={() => handleReadList(book)} className="btn bg-white border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white hover:border-0">Read</button>
               <button className="btn btn-secondary bg-blue-500 border-0">Wishlist</button>
             </div>
           </div>

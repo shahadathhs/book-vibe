@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import Readlist from './Readlist';
-import WishList from './WishList';
 
 const TabData = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -14,10 +12,10 @@ const TabData = () => {
         <Tab>Wishlist Books</Tab>
       </TabList>
       <TabPanel>
-        <Readlist></Readlist>
+        <p>This is Reading List</p>
       </TabPanel>
       <TabPanel>
-        <WishList></WishList>
+        <p>This is wish List</p>
       </TabPanel>
     </Tabs>
   );
