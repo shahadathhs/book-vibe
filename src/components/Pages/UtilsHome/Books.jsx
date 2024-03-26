@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import { FaRegStar } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Books = ({book}) => {
   const {bookId, bookName, author, rating, category, tags, image} = book
-  console.log(typeof(bookId, bookName, author, rating, category, tags, image))
+  // console.log(typeof(bookId, bookName, author, rating, category, tags, image))
   return (
-    <div>
+    <Link to={`/books/${bookId}`}>
       <div className="card bg-base-100 p-4 pb-0 border-2 h-[460px]">
         <figure><img src={image} className='h-40' alt="Book Image" /></figure>
         <div className="card-body px-2 space-y-2">
@@ -23,7 +24,7 @@ const Books = ({book}) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
