@@ -4,7 +4,7 @@ import Books from "./UtilsHome/Books";
 
 const Home = () => {
   const books = useLoaderData();
-  console.log(books)
+  // console.log(books)
 
   return (
     <div className="sm:px-1 md:px-3 lg:px-12">
