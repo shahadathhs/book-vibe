@@ -1,6 +1,6 @@
 const Faq = () => {
   return (
-    <div className="p-8 space-y-3">
+    <div className="p-8 pt-3 space-y-3">
       <div className="space-y-3 p-3 bg-base-200 rounded-xl border-green-500 border-2">
         <h3 className="text-green-500 text-2xl font-bold">Frequently Asked Questions</h3>
         <p className="text-gray-500">Below are frequently asked questions about Book Vibe. For over twenty years, our mission has been to promote reading and writing as well as to connect authors with readers.  This is our passion and we love what we do.  Therefore, please do not hesitate to send us your questions, suggestions, and comments. We are always looking for new ways to achieve our mission. Happy Book Vibe-ing!</p>

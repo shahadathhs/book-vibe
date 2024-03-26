@@ -1,6 +1,6 @@
 const ContactUs = () => {
   return (
-    <div className="p-8 flex justify-center lg:text-2xl h-screen bg-base-200">
+    <div className="mt-5 p-8 flex justify-center lg:text-2xl items-center bg-base-200">
       <div className="space-y-3">
         <h3 className="text-green-500 text-2xl font-bold">Contact Us Anytime.</h3>
         <div>
@@ -18,7 +18,6 @@ const ContactUs = () => {
         <p>We will look forward to hearing from you.</p>
         <p>Thank you for visiting our site!</p>
       </div>
-      
     </div>
   );
 };
