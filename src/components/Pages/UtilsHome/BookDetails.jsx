@@ -12,10 +12,10 @@ const BookDetails = () => {
 
   return (
     <div>
-      <div className="hero bg-base-200 p-3">
+      <div className="hero bg-base-200 p-2">
         <div className="hero-content flex-col lg:flex-row justify-between gap-6">
-          <img src={book.image} className="max-w-sm rounded-lg shadow-2xl" />
-          <div className="flex-1 space-y-2">
+          <img src={book.image} className="h-60 rounded-lg shadow-2xl" />
+          <div className="flex-1 space-y-1">
             <h2 className="text-green-500 font-bold text-3xl">{book.bookName}</h2>
             <p className='text-gray-500 font-bold text-xl'>By: {book.author}</p>
             <hr className="border-t-2" />

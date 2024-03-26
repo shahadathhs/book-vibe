@@ -20,7 +20,7 @@ const Faq = () => {
         <div className="collapse collapse-plus bg-base-200">
           <input type="radio" name="my-accordion-3" /> 
           <div className="collapse-title text-xl font-medium text-green-500">
-          What can we find at LitPick Book Reviews online?
+            What can we find at LitPick Book Reviews online?
           </div>
           <div className="collapse-content text-gray-500"> 
             <p>At Book Vibe, we have picture books, middle grade, young adult, and adult books to read and recommend. Book Vibe reviewers review these books, and we post their book reviews for all to see.</p>
@@ -30,10 +30,10 @@ const Faq = () => {
         <div className="collapse collapse-plus bg-base-200">
           <input type="radio" name="my-accordion-3" /> 
           <div className="collapse-title text-xl font-medium text-green-500">
-          How can we start a book club with Book Vibe?
+            How can we start a book club with Book Vibe?
           </div>
           <div className="collapse-content text-gray-500"> 
-            <p>A teacher, librarian, or parent can sponsor a Book Vibe book club or reading group by signing up their readers for a group membership. Groups of people can review the same title on Book Vibe as an eBook. We have hundreds of eBooks on our list that are available for review.  Limited quantities of print review books make it difficult for us to furnish multiple copies to large groups, but educators and parents have used the Book Vibe program for their book clubs by allowing each person to choose a different print book from our list to read and review.  Once a week or month at club meetings, a different person then presents their book and book review to the group for discussion. This way, other people in the club can decide if they would like to read the book too. The many different review copies can then be donated by reviewers to the library's book collection.</p>
+            <p>A teacher, librarian, or parent can sponsor a Book Vibe book club or reading group by signing up their readers for a group membership. Groups of people can review the same title on Book Vibe as an eBook. We have hundreds of eBooks on our list that are available for review.</p>
           </div>
         </div>
 
