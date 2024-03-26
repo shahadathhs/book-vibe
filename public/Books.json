@@ -8,7 +8,7 @@
       "totalPages": 180,
       "rating": 4.5,
       "category": "Fiction",
-      "tags": ["Classic", "American Literature"],
+      "tags": ["Classic", "Literature"],
       "publisher": "Scribner",
       "yearOfPublishing": 1925
   },
@@ -21,7 +21,7 @@
       "totalPages": 324,
       "rating": 4.8,
       "category": "Fiction",
-      "tags": ["Classic", "Coming-of-age", "Social Issues"],
+      "tags": ["Classic", "Social Issues"],
       "publisher": "J. B. Lippincott & Co.",
       "yearOfPublishing": 1960
   },
@@ -34,7 +34,7 @@
       "totalPages": 328,
       "rating": 4.7,
       "category": "Fiction",
-      "tags": ["Dystopian", "Political", "Social Commentary"],
+      "tags": ["Dystopian", "Political"],
       "publisher": "Secker & Warburg",
       "yearOfPublishing": 1949
   },
@@ -47,7 +47,7 @@
       "totalPages": 224,
       "rating": 4.4,
       "category": "Fiction",
-      "tags": ["Classic", "Coming-of-age"],
+      "tags": ["Classic", "Satire"],
       "publisher": "Little, Brown and Company",
       "yearOfPublishing": 1951
   },
@@ -60,7 +60,7 @@
       "totalPages": 432,
       "rating": 4.6,
       "category": "Fiction",
-      "tags": ["Classic", "Romance", "Satire"],
+      "tags": ["Classic", "Romance"],
       "publisher": "T. Egerton, Whitehall",
       "yearOfPublishing": 1813
   },
@@ -73,7 +73,7 @@
       "totalPages": 320,
       "rating": 4.9,
       "category": "Fantasy",
-      "tags": ["Adventure", "Quest", "Middle-earth"],
+      "tags": ["Adventure", "Quest"],
       "publisher": "George Allen & Unwin",
       "yearOfPublishing": 1937
   },
@@ -86,7 +86,7 @@
       "totalPages": 320,
       "rating": 4.7,
       "category": "Fantasy",
-      "tags": ["Magic", "Adventure", "Friendship"],
+      "tags": ["Magic", "Friendship"],
       "publisher": "Bloomsbury Publishing",
       "yearOfPublishing": 1997
   },
@@ -99,7 +99,7 @@
       "totalPages": 374,
       "rating": 4.3,
       "category": "Young Adult",
-      "tags": ["Dystopian", "Survival", "Action"],
+      "tags": ["Dystopian", "Survival"],
       "publisher": "Scholastic Corporation",
       "yearOfPublishing": 2008
   },
@@ -112,7 +112,7 @@
     "totalPages": 432,
     "rating": 4.8,
     "category": "Fantasy",
-    "tags": ["Adventure", "Epic", "Middle-earth"],
+    "tags": ["Epic", "Adventure"],
     "publisher": "George Allen & Unwin",
     "yearOfPublishing": 1954
   }
