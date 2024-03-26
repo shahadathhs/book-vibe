@@ -42,7 +42,7 @@ const Nav = () => {
                         {links}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case sm:text-2xl  lg:text-3xl font-bold p-0">Book Vibe</Link>
+                <Link to='/' className="btn btn-ghost normal-case sm:text-2xl  lg:text-3xl font-bold p-0"><span className="text-green-500">Book</span> <span className="text-blue-500">Vibe</span> </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-1 border-1 font-bold text-gray-500">
