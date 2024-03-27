@@ -30,7 +30,7 @@ const PagetoRead = () => {
   return (
     <div className='flex justify-center items-center h-full w-full bg-base-200 p-5'>
       <BarChart
-        width={700}
+        width={900}
         height={400}
         data={namesPages}
         margin={{
@@ -41,7 +41,7 @@ const PagetoRead = () => {
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
+        <XAxis angle={-20} dataKey="name"  />
         <YAxis />
         <Bar dataKey="uv" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
           {namesPages.map((entry, index) => (
@@ -62,3 +62,5 @@ TriangleBar.propTypes = {
   height : PropTypes.number,
   fill : PropTypes.string,
 }
+
+// textAnchor="end"
