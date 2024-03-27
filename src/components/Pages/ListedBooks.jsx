@@ -37,34 +37,34 @@ import { Link } from 'react-router-dom';
 const ListedBooks = () => {
 
   const [tabIndex, setTabIndex] = useState(0);
-  // const [readBooks, setReadBooks] = useState(getReadBooks())
-  // const [wishBooks, setWishBooks] = useState(getWishBooks())
-
-  let readBooks = getReadBooks()
-  let wishBooks = getWishBooks()
+  const [readBooks, setReadBooks] = useState(getReadBooks())
+  const [wishBooks, setWishBooks] = useState(getWishBooks())
 
   const handleSorting = sorting => {
 
-    let rBook = getReadBooks()
-    let wBook = getWishBooks()
-  
     if (sorting === 'rating') {
       
-      const sortedRBooks = rBook.sort((a, b) => b.rating - a.rating);
-      const sortedWBooks = wBook.sort((a, b) => b.rating - a.rating);
-      return console.log(sortedRBooks, sortedWBooks)
+      const sortedRRating = readBooks.sort((a, b) => b.rating - a.rating);
+      const sortedWRating = wishBooks.sort((a, b) => b.rating - a.rating);
+      setReadBooks(sortedRRating)
+      setWishBooks(sortedWRating)
+      return console.log(sortedRRating, sortedWRating)
     
     } else if (sorting === 'numberOfPages') {
       
-      const sortedRBooks = rBook.sort((a, b) => b.totalPages - a.totalPages);
-      const sortedWBooks = wBook.sort((a, b) => b.totalPages - a.totalPages);
-      return console.log(sortedRBooks, sortedWBooks)
+      const sortedRPage = readBooks.sort((a, b) => b.totalPages - a.totalPages);
+      const sortedWPage = wishBooks.sort((a, b) => b.totalPages - a.totalPages);
+      setReadBooks(sortedRPage)
+      setWishBooks(sortedWPage)
+      return console.log(sortedRPage, sortedWPage)
     
     }else if (sorting === 'publishYear') {
       
-      const sortedRBooks = rBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
-      const sortedWBooks = wBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
-      return console.log(sortedRBooks, sortedWBooks)
+      const sortedRYear = readBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+      const sortedWYear = wishBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+      setReadBooks(sortedRYear)
+      setWishBooks(sortedWYear)
+      return console.log(sortedRYear, sortedWYear)
     
     }
   }
