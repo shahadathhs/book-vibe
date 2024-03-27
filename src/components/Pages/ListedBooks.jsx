@@ -8,37 +8,68 @@ import { GoPeople } from "react-icons/go";
 import { HiOutlineNewspaper } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
 
-const handleSorting = sorting => {
-  let rBook = getReadBooks()
-  let wBook = getWishBooks()
+// const handleSorting = sorting => {
 
-  if (sorting === 'rating') {
+//   let rBook = getReadBooks()
+//   let wBook = getWishBooks()
+
+//   if (sorting === 'rating') {
     
-    const sortedRBooks = rBook.sort((a, b) => b.rating - a.rating);
-    const sortedWBooks = wBook.sort((a, b) => b.rating - a.rating);
-    return console.log(sortedRBooks, sortedWBooks)
+//     const sortedRBooks = rBook.sort((a, b) => b.rating - a.rating);
+//     const sortedWBooks = wBook.sort((a, b) => b.rating - a.rating);
+//     return console.log(sortedRBooks, sortedWBooks)
   
-  } else if (sorting === 'numberOfPages') {
+//   } else if (sorting === 'numberOfPages') {
     
-    const sortedRBooks = rBook.sort((a, b) => b.totalPages - a.totalPages);
-    const sortedWBooks = wBook.sort((a, b) => b.totalPages - a.totalPages);
-    return console.log(sortedRBooks, sortedWBooks)
+//     const sortedRBooks = rBook.sort((a, b) => b.totalPages - a.totalPages);
+//     const sortedWBooks = wBook.sort((a, b) => b.totalPages - a.totalPages);
+//     return console.log(sortedRBooks, sortedWBooks)
   
-  }else if (sorting === 'publishYear') {
+//   }else if (sorting === 'publishYear') {
     
-    const sortedRBooks = rBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
-    const sortedWBooks = wBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
-    return console.log(sortedRBooks, sortedWBooks)
+//     const sortedRBooks = rBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+//     const sortedWBooks = wBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+//     return console.log(sortedRBooks, sortedWBooks)
   
-  }
-}
+//   }
+// }
 
 const ListedBooks = () => {
 
   const [tabIndex, setTabIndex] = useState(0);
+  // const [readBooks, setReadBooks] = useState(getReadBooks())
+  // const [wishBooks, setWishBooks] = useState(getWishBooks())
 
   let readBooks = getReadBooks()
   let wishBooks = getWishBooks()
+
+  const handleSorting = sorting => {
+
+    let rBook = getReadBooks()
+    let wBook = getWishBooks()
+  
+    if (sorting === 'rating') {
+      
+      const sortedRBooks = rBook.sort((a, b) => b.rating - a.rating);
+      const sortedWBooks = wBook.sort((a, b) => b.rating - a.rating);
+      return console.log(sortedRBooks, sortedWBooks)
+    
+    } else if (sorting === 'numberOfPages') {
+      
+      const sortedRBooks = rBook.sort((a, b) => b.totalPages - a.totalPages);
+      const sortedWBooks = wBook.sort((a, b) => b.totalPages - a.totalPages);
+      return console.log(sortedRBooks, sortedWBooks)
+    
+    }else if (sorting === 'publishYear') {
+      
+      const sortedRBooks = rBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+      const sortedWBooks = wBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+      return console.log(sortedRBooks, sortedWBooks)
+    
+    }
+  }
+
+  handleSorting()
 
   return (
     <div>
