@@ -1,72 +1,8 @@
 import PropTypes from 'prop-types';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
-// import { getWishBooks } from '../utility/locatStorage';
+import { getReadBooks } from '../utility/locatStorage';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink','#0088FE', '#00C49F', '#FFBB28',];
-
-// let pageBooks = getWishBooks()
-// console.log(pageBooks)
-// const bookNamesAndTotalPages = pageBooks.map(book => {
-//   return {
-//     name: book.bookName,
-//     uv: book.totalPages,
-//   };
-// });
-// console.log(bookNamesAndTotalPages);
-
-// let singleBook = bookNamesAndTotalPages.map(page => {
-//   return page.name
-// })
-// console.log(singleBook);
-// let name =singleBook.map(name => {
-//   return name
-// })
-// console.log(name)
-
-const data = [
-  {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  // {
-  //   name: 'Page B',
-  //   uv: 3000,
-  //   pv: 1398,
-  //   amt: 2210,
-  // },
-  // {
-  //   name: 'Page C',
-  //   uv: 2000,
-  //   pv: 9800,
-  //   amt: 2290,
-  // },
-  // {
-  //   name: 'Page D',
-  //   uv: 2780,
-  //   pv: 3908,
-  //   amt: 2000,
-  // },
-  // {
-  //   name: 'Page E',
-  //   uv: 1890,
-  //   pv: 4800,
-  //   amt: 2181,
-  // },
-  // {
-  //   name: 'Page F',
-  //   uv: 2390,
-  //   pv: 3800,
-  //   amt: 2500,
-  // },
-  // {
-  //   name: 'Page G',
-  //   uv: 3490,
-  //   pv: 4300,
-  //   amt: 2100,
-  // },
-];
 
 const getPath = (x, y, width, height) => {
   return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
@@ -81,12 +17,22 @@ const TriangleBar = (props) => {
 };
 
 const PagetoRead = () => {
+  
+  let pageBooks = getReadBooks()
+  const namesPages = pageBooks.map(book => {
+    return {
+      name: book.bookName,
+      uv: book.totalPages,
+    };
+  });
+  console.log(namesPages)
+ 
   return (
     <div className='flex justify-center items-center h-full w-full bg-base-200 p-5'>
       <BarChart
         width={700}
         height={400}
-        data={data}
+        data={namesPages}
         margin={{
           top: 20,
           right: 30,
@@ -98,8 +44,8 @@ const PagetoRead = () => {
         <XAxis dataKey="name" />
         <YAxis />
         <Bar dataKey="uv" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+          {namesPages.map((entry, index) => (
+            <Cell key={`${index}`} fill={colors[index % 20]} />
           ))}
         </Bar>
       </BarChart>
